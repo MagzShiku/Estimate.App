@@ -8,7 +8,7 @@
 # COHORT_14
 
 # About EstiMate
-This is a service that allows users to easily make estimates of their envisioned construction projects. The App collects user inputs on the preferences of the house and creates an estimated cost of the same. Allowing the user to know if the project is feaible or not.
+This is a service that allows users to make estimates of their envisioned construction projects easily. The app collects user input on the preferences of the house and creates an estimated cost of the same. Allowing the user to know if the project is feasible or not.
 
 
 # Stage 1 of development.
@@ -19,11 +19,11 @@ User Interface (UI) is concerned with the look of the web app, dealing with desi
 
 User Experience (UX) manages how a customer interacts with the app by understanding what a user wants and feels. UX design is open-ended, asking at every stage what a user may want, need, and feel – and how to feel better and reduce friction in the experience. UX design elements include being useful, desirable, accessible, credible, findable, usable, and valuable.
 
-We are Using html, CSS and JS
+We are using HTML, CSS, and JS.
 
 # Stage 2 of Development
   # Mapping Out the User Journey
-The user journey map visualizes the user flow through the web app over time. It tells the story of the user’s experience and puts the customer front and center in thinking. By mapping each step of the user (or customer) journey, it is easier to understand the motivations, needs, and challenges users experience – and how better UX design can overcome these stumbling blocks.
+The user journey map visualizes the user flow through the web app over time. It tells the story of the user’s experience and puts the customer front and center in thinking. By mapping each step of the user (or customer) journey, it is easier to understand the motivations and needs. It challenges users' experience – and how better UX design can overcome these stumbling blocks.
 
 # Stage 3 of Development
   # Wireframe the app
@@ -38,7 +38,7 @@ Adding additional interactivity to the produced wireframes will allow the result
 After design and validation comes development – the stage where more significant technical decisions are made about the frameworks and technologies that will support the app and the actual coding of the web app.
 
 # Stage 6 of Development
-  # The tech Stack
+  # The Tech Stack
 A tech stack combines technology services, frameworks, and languages that make up the back end (how it works) and the front end (how it looks).
 
   - The front end (client-side) contains all the elements that go into the visual representation, including using three programming languages: HTML, CSS, and JavaScript.
