@@ -1,12 +1,18 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
+    overflow: auto;
+    max-height: 500px;
+}
+.content h2,
+.content p {
+    display: column;
+    margin-right: 20px;
 }
 
 .background-container {
     position: relative;
-    height: 500px;
+    height: 100%;
     z-index: -2;
 }
 
@@ -58,18 +64,34 @@ body {
     padding: 0;
 }
 
+/*h2 {
+    width: 60rem;
+    font-size: 7rem;
+    color: #fff;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
+    animation: bannerAnim 1s 2s backwards;
+}*/
+
+/*p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ddd;
+    margin-bottom: 3rem;
+    animation: bannerAnim 1s 1.5s backwards;
+}*/
+
 #navbar ul li {
     margin-right: 30px;
 }
 
 #navbar ul li a {
     text-decoration: none;
-    color: #161616;
+    color: #afadad;
     transition: color 0.3s ease-in-out;
 }
 
 #navbar ul li a:hover {
-    color: #d61df3;
+    color: #e5eb46;
 }
 
 .content {
@@ -82,4 +104,36 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+}
+/*.overlay {
+    position: relative;
+}*/
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-content h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.overlay-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 20pt;
 }
