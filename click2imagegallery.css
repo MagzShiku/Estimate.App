@@ -1,15 +1,16 @@
 .click2intro {
     display: flex;
     justify-content: center;
+    height: 200px;
 }
 
 .click2-content h2 {
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 5px;
     color: #636262;
-    padding-top: 40px;
+    padding-top: 80px;
 }
     
 .click2-content p {
@@ -72,11 +73,11 @@
 }
 
 .image-overlay h3 {
-    font-size: 16px; /* Adjust the font size */
+    font-size: 20px; /* Adjust the font size */
     margin-bottom: 5px; /* Adjust the margin */
 }
 
 .image-overlay p {
-    font-size: 12px; /* Adjust the font size */
+    font-size: 15px; /* Adjust the font size */
     text-align: center;
 }
