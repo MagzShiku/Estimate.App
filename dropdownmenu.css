@@ -10,3 +10,21 @@
 .dropdown-column {
     flex: 1;
 }
+
+
+.click2submit button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #515050;
+    color: #e6e2e2;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    top: 20px;
+    bottom: 50px;
+    left:50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
