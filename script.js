@@ -29,7 +29,7 @@ function submitForm() {
     var animal = document.getElementById("animal").value;
     var fruit = document.getElementById("fruit").value;
     var vehicle = document.getElementById("vehicle").value;
-    var drink = document.getElementById("drink").value;
+    var year = document.getElementById("year").value;
 
     // Perform any desired actions with the selected values
     console.log("Name: " + name);
@@ -37,5 +37,5 @@ function submitForm() {
     console.log("Animal: " + animal);
     console.log("Fruit: " + fruit);
     console.log("Vehicle: " + vehicle);
-    console.log("Drink: " + drink);
+    console.log("Year: " + year);
 }

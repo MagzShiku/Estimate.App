@@ -1,12 +1,12 @@
 .dropdown-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 30%;
     text-align: center;
     padding-top: 45px;
     margin-left: 35%;
-  }
+}
 
-  .dropdown-column {
+.dropdown-column {
     flex: 1;
-  }
+}
