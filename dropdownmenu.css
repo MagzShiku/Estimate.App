@@ -1,0 +1,12 @@
+.dropdown-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    text-align: center;
+    padding-top: 45px;
+    margin-left: 35%;
+  }
+
+  .dropdown-column {
+    flex: 1;
+  }

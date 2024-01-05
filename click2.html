@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="testimonials.css">
     <link rel="stylesheet" type="text/css" href="click2imagegallery.css">
+    <link rel="stylesheet" type="text/css" href="dropdownmenu.css">
     <title>EstiMate</title>
     
 </head>
@@ -85,11 +86,77 @@
         <div class="click2-content">
             <h2>Tell us more!</h2>
             <p>Fill each of the following requirements and let us know more about the house of your dreams.</p>
+            <hr>
         </div>
     </div>
-    <section>
-        
-    </section>
+
+    <div class="dropdown-container">
+        <div class="dropdown-column">
+            <label for="name">Name:</label>
+            <select id="name">
+                <option value="John">John</option>
+                <option value="Jane">Jane</option>
+                <option value="Mike">Mike</option>
+                <!-- Add more names as needed -->
+            </select>
+
+            <br><br>
+
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <!-- Add more colors as needed -->
+            </select>
+
+            <br><br>
+
+            <label for="animal">Animal:</label>
+            <select id="animal">
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <!-- Add more animals as needed -->
+            </select>
+        </div>
+
+        <div class="dropdown-column">
+            <label for="fruit">Fruit:</label>
+            <select id="fruit">
+                <option value="Apple">Apple</option>
+                <option value="Orange">Orange</option>
+                <option value="Banana">Banana</option>
+                <!-- Add more fruits as needed -->
+            </select>
+
+            <br><br>
+
+            <label for="vehicle">Vehicle:</label>
+            <select id="vehicle">
+                <option value="Car">Car</option>
+                <option value="Bicycle">Bicycle</option>
+                <option value="Motorcycle">Motorcycle</option>
+                <!-- Add more vehicles as needed -->
+            </select>
+
+            <br><br>
+
+            <label for="drink">Drink:</label>
+            <select id="drink">
+                <option value="Coffee">Coffee</option>
+                <option value="Tea">Tea</option>
+                <option value="Juice">Juice</option>
+                <!-- Add more drinks as needed -->
+            </select>
+        </div>
+    </div>
+
+    <br><br>
+
+    <button onclick="submitForm()">Submit</button>
+
+    <script src="script.js"></script>
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Estimate</p>
