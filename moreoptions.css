@@ -91,3 +91,14 @@
     text-align: center;
     margin-left: 10%;
 }
+
+.hr2 {
+    width: 75%;
+    margin: 0 auto; /* Center the horizontal line */
+    border: none;
+    border-top: 2px solid rgb(80, 79, 79); /* Adjust the color and style as desired */
+    padding-bottom: 20px;
+    padding: none;
+}
+
+/*Subheading*/
