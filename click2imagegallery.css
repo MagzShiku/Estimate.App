@@ -30,8 +30,8 @@
 
 .image-item {
     position: relative;
-    width: 100px; /* Adjust the width of the images */
-    height: 100px; /* Adjust the height of the images */
+    width: 500px; /* Adjust the width of the images */
+    height: 300px; /* Adjust the height of the images */
     overflow: hidden; /* Ensure consistent image size */
 }
 
