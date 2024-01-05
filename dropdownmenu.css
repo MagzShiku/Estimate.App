@@ -14,8 +14,9 @@
 
 .click2submit button {
     padding: 10px 20px;
+    border: none;
     font-size: 16px;
-    background-color: #515050;
+    background-color: #69c4c7;
     color: #e6e2e2;
     border-radius: 20px;
     cursor: pointer;
