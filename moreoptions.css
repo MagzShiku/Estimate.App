@@ -23,6 +23,31 @@
     text-align: center;
     margin-left: 10%;
 }
-hr {
-    border-bottom: 30px;
+
+/*more options columns*/
+/*left column*/
+.moreoptions-container {
+    display: flex;
+    height: 100vh; /* Adjust the height as needed */
 }
+
+.moreoptions-column {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+}
+
+/*vertical seperating line*/
+.vertical-line {
+    width: 1px;
+    background-color: #757575; /* Adjust the color as desired */
+    border:none;
+    margin-bottom: 30px;
+}
+
+/*the two thinner columns of the right column*/
+.sub-column {
+    flex: 1;
+    padding: 20px;
+}
+
