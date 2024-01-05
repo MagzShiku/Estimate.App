@@ -1,7 +1,7 @@
 .click3intro {
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 250px;
 }
 
 .click3-content h2 {
@@ -22,4 +22,7 @@
     max-width: 80%;
     text-align: center;
     margin-left: 10%;
+}
+hr {
+    border-bottom: 30px;
 }
