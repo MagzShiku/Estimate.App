@@ -1,0 +1,73 @@
+.click2intro {
+    
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        padding-top: 40px;
+        color: #d7d4d4;
+}
+    
+.click2-content {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        font-weight: 100;
+        font-size: 16px;
+        color: #d7d4d4;
+}
+
+/* Add your custom CSS styles here */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images in one row */
+    gap: 10px; /* Spacing between images */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-item {
+    position: relative;
+    width: 100px; /* Adjust the width of the images */
+    height: 100px; /* Adjust the height of the images */
+    overflow: hidden; /* Ensure consistent image size */
+}
+
+.image-item img {
+    width: 100%; /* Make the images fill the container */
+    height: 100%; /* Make the images fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.image-overlay h3 {
+    font-size: 16px; /* Adjust the font size */
+    margin-bottom: 5px; /* Adjust the margin */
+}
+
+.image-overlay p {
+    font-size: 12px; /* Adjust the font size */
+    text-align: center;
+}
