@@ -32,4 +32,7 @@ I need to first make the moreoptions into line to work...Before going into the s
 
 The test worked... this is the listener that I needed (id="myForm" action="testreceiver.html" onsubmit="return submitForm()")
 
+Then I rewrote one by one the script2.js, while testing each...
+Its quite satisfying to see things work...
+
 ### Process the captured values on the server-side and use them as needed (e.g., store in a database, display on the page, etc.).
