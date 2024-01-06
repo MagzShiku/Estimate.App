@@ -37,7 +37,7 @@
     </div>
 
     <!-- Image Gallery -->
-    <form action="moreoptions.html" onsubmit="submitForm()">   
+    <form id="myForm" action="moreoptions.html" onsubmit="return submitForm()">   
         <div class="image-gallery">
             <div class="image-item">
                 <img src="house/townhouse.jpg" alt="townhouse" onclick="selectTypology('Townhouse')">
@@ -93,8 +93,8 @@
         <div class="dropdown-container">
             <div class="dropdown-column">
                 <!--Location-->
-                <label for="location">Location:</label>
-                <select id="location">
+                <label for="userlocation">Location:</label>
+                <select id="userlocation">
                     <option value="Nairobi">Nairobi</option>
                     <option value="Narok">Narok</option>
                     <option value="Nakuru">Nakuru</option>
