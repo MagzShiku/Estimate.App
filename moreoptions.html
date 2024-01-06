@@ -30,7 +30,7 @@
     <div class="click3intro">
         <div class="click3-content">
             <h2>Keep Building!</h2>
-            <p>Based on your previous info, your Dream house is <span id="typology"></span>, located in <span id="location"></span>. Your house will house <span id="occupants"></span> occupants and will be built in <span id="year"></span>. Your budget is <span id="budget"></span>.</p>
+            <p>Based on your previous info, your Dream house is <span id="typology"></span>, located in <span id="county"></span>. Your house will house <span id="occupants"></span> occupants and will be built in <span id="year"></span>. Your budget is <span id="budget"></span> Ksh.</p>
             <hr>  
         </div>        
     </div>
@@ -41,7 +41,7 @@
 
         // Get the selected values from the URL query parameters
         const typology = urlParams.get('typology');
-        const selectedLocation = urlParams.get('location');
+        const county = urlParams.get('county');
         const adults = urlParams.get('adults');
         const children = urlParams.get('children');
         const year = urlParams.get('year');
@@ -49,7 +49,7 @@
 
         // Update the content with the selected values
         document.getElementById('typology').textContent = typology;
-        document.getElementById('location').textContent = selectedLocation;
+        document.getElementById('county').textContent = county;
         document.getElementById('occupants').textContent = parseInt(adults) + parseInt(children);
         document.getElementById('year').textContent = year;
         document.getElementById('budget').textContent = budget;
