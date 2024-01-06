@@ -30,10 +30,31 @@
     <div class="click3intro">
         <div class="click3-content">
             <h2>Keep Building!</h2>
-            <p>Based in your previous info, your Dream house is <span id="typology"></span>, located in <span id="location"></span>. Your house will house <span id="occupants"></span> occupants and will be built in <span id="year"></span>. Your budget is <span id="budget"></span>.</p>
+            <p>Based on your previous info, your Dream house is <span id="typology"></span>, located in <span id="location"></span>. Your house will house <span id="occupants"></span> occupants and will be built in <span id="year"></span>. Your budget is <span id="budget"></span>.</p>
             <hr>  
         </div>        
     </div>
+
+    <script>
+        // Get the URL search parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get the selected values from the URL query parameters
+        const typology = urlParams.get('typology');
+        const selectedLocation = urlParams.get('location');
+        const adults = urlParams.get('adults');
+        const children = urlParams.get('children');
+        const year = urlParams.get('year');
+        const budget = urlParams.get('budget');
+
+        // Update the content with the selected values
+        document.getElementById('typology').textContent = typology;
+        document.getElementById('location').textContent = selectedLocation;
+        document.getElementById('occupants').textContent = parseInt(adults) + parseInt(children);
+        document.getElementById('year').textContent = year;
+        document.getElementById('budget').textContent = budget;
+    </script>
+    
     <div class="moreoptions-container">
         <div class="moreoptions-column">
             <!-- Content for the first column -->
@@ -56,34 +77,34 @@
                     <p>This is the content of the first sub-column.</p>
                     <div class="dropdown-column">
                         <!--Location-->
-                        <label for="location">Location:</label>
-                        <select id="name">
-                            <option value="Nairobi">Naoribi</option>
+                        <label for="location1">Location:</label>
+                        <select id="location1">
+                            <option value="Nairobi">Nairobi</option>
                             <option value="Narok">Narok</option>
                             <option value="Nakuru">Nakuru</option>
-                            <!-- Add more names as needed -->
+                            <!-- Add more locations as needed -->
                         </select>
             
                         <br><br>
             
                         <!--Permanent Adults-->
-                        <label for="adults">Adults:</label>
-                        <select id="adults">
+                        <label for="adults1">Adults:</label>
+                        <select id="adults1">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <!-- Add more colors as needed -->
+                            <!-- Add more options as needed -->
                         </select>
             
                         <br><br>
             
                         <!--Num of floors-->
-                        <label for="flors">No. of floors:</label>
-                        <select id="floors">
-                            <option value="GroundOnly">G Only</option>
-                            <option value="toFirst">G + 1</option>
-                            <option value="toSecond">G + 2</option>
-                            <!-- Add more animals as needed -->
+                        <label for="floors1">No. of floors:</label>
+                        <select id="floors1">
+                            <option value="GroundOnly">Ground Only</option>
+                            <option value="toFirst">Ground + 1</option>
+                            <option value="toSecond">Ground + 2</option>
+                            <!-- Add more options as needed -->
                         </select>
                     </div>
                 </div>
@@ -94,34 +115,34 @@
                     <p>This is the content of the second sub-column.</p>
                     <div class="dropdown-column">
                         <!--Location-->
-                        <label for="location">Location:</label>
-                        <select id="name">
-                            <option value="Nairobi">Naoribi</option>
+                        <label for="location2">Location:</label>
+                        <select id="location2">
+                            <option value="Nairobi">Nairobi</option>
                             <option value="Narok">Narok</option>
                             <option value="Nakuru">Nakuru</option>
-                            <!-- Add more names as needed -->
+                            <!-- Add more locations as needed -->
                         </select>
             
                         <br><br>
             
                         <!--Permanent Adults-->
-                        <label for="adults">Adults:</label>
-                        <select id="adults">
+                        <label for="adults2">Adults:</label>
+                        <select id="adults2">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <!-- Add more colors as needed -->
+                            <!-- Add more options as needed -->
                         </select>
             
                         <br><br>
             
                         <!--Num of floors-->
-                        <label for="flors">No. of floors:</label>
-                        <select id="floors">
-                            <option value="GroundOnly">G Only</option>
-                            <option value="toFirst">G + 1</option>
-                            <option value="toSecond">G + 2</option>
-                            <!-- Add more animals as needed -->
+                        <label for="floors2">No. of floors:</label>
+                        <select id="floors2">
+                            <option value="GroundOnly">Ground Only</option>
+                            <option value="toFirst">Ground + 1</option>
+                            <option value="toSecond">Ground + 2</option>
+                            <!-- Add more options as needed -->
                         </select>
                     </div>
                 </div>
@@ -129,7 +150,6 @@
             <hr class="hr2">
         </div>
     </div>
-    <script src="script.js"></script>
     <footer>
         <p>&copy; 2023 Estimate</p>
     </footer>
