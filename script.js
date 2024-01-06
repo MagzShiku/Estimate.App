@@ -24,18 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /*this is for the dropdown menu of click2 */
 function submitForm() {
-    var name = document.getElementById("name").value;
-    var color = document.getElementById("color").value;
-    var animal = document.getElementById("animal").value;
-    var fruit = document.getElementById("fruit").value;
-    var vehicle = document.getElementById("vehicle").value;
+    var location = document.getElementById("location").value;
+    var adults = document.getElementById("adults").value;
+    var floors = document.getElementById("floors").value;
+    var budget = document.getElementById("budget").value;
+    var children = document.getElementById("children").value;
     var year = document.getElementById("year").value;
 
     // Perform any desired actions with the selected values
-    console.log("Name: " + name);
-    console.log("Color: " + color);
-    console.log("Animal: " + animal);
-    console.log("Fruit: " + fruit);
-    console.log("Vehicle: " + vehicle);
-    console.log("Year: " + year);
+    console.log("location: " + location);
+    console.log("adults: " + adults);
+    console.log("floors: " + floors);
+    console.log("budget: " + budget);
+    console.log("children: " + children);
+    console.log("year: " + year);
 }
