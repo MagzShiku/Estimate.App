@@ -35,4 +35,14 @@ The test worked... this is the listener that I needed (id="myForm" action="testr
 Then I rewrote one by one the script2.js, while testing each...
 Its quite satisfying to see things work...
 
+For the image, I noticed that the image was never selected, there was an overlay and text on it... So instead of selecting an image, I selected the text tht was the topmost layer.... This was a EUROKA MOMENT FOR ME! I am glad it came through...
+
 ### Process the captured values on the server-side and use them as needed (e.g., store in a database, display on the page, etc.).
+
+
+3. NOW WE HAVE TO LINK THE IMAGE SELECTED ON THE PREVIOUS PAGE TO DOSPLAY IN THE CURRENT MOREOPTIONS PAGE.... iT SHOULD ALWO RETRIEVE OTHER IMAGES ON THE SAMEFROM THE DATA BASE SO AS TO PROVIE PLANS ETC
+
+### now the first step is to have ither functions on different files....
+
+I willl keep updating as I go :)
+This is the most excited I have been in a while :)
