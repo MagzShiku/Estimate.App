@@ -53,3 +53,21 @@ function selectTypology(typology) {
     // Here the additional actions I will need is to assign a unit cost for each typology
 }
 
+
+// Get the URL search parameters
+const urlParams = new URLSearchParams(window.location.search);
+
+// Get the selected values from the URL query parameters
+const typology = urlParams.get('typology');
+const location = urlParams.get('location');
+const adults = urlParams.get('adults');
+const children = urlParams.get('children');
+const year = urlParams.get('year');
+const budget = urlParams.get('budget');
+
+// Update the content with the selected values
+document.getElementById('typology').textContent = typology;
+document.getElementById('location').textContent = location;
+document.getElementById('occupants').textContent = parseInt(adults) + parseInt(children);
+document.getElementById('year').textContent = year;
+document.getElementById('budget').textContent = budget;
