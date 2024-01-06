@@ -1,0 +1,54 @@
+To display the selected image from the database in the first column of the "moreoptions" page when an h5 element is clicked, you will need to use JavaScript to handle the image selection and retrieval. Here's an example of how you can achieve this:
+
+Modify the HTML code for the image items to include a unique identifier for each image:
+<div class="image-item">
+    <img src="house/townhouse.jpg" alt="townhouse">
+    <div class="image-overlay">
+        <h5 onclick="selectTypology('Townhouse', 'townhouse.jpg')">Townhouse</h5>
+        <p>Storied house usually with a guest bedroom on GF</p>
+    </div>
+</div>
+Create a JavaScript function, selectTypology, that will be called when an h5 element is clicked. Pass the selected typology and image filename as arguments to the function:
+function selectTypology(typology, imageFilename) {
+    // Store the selected typology and image filename in session storage
+    sessionStorage.setItem('selectedTypology', typology);
+    sessionStorage.setItem('selectedImage', imageFilename);
+    // Redirect to the moreoptions page
+    window.location.href = 'moreoptions.html';
+}
+On the "moreoptions" page, retrieve the selected typology and image filename from session storage and use them to display the corresponding image in the first column:
+// Retrieve the selected typology and image filename from session storage
+var selectedTypology = sessionStorage.getItem('selectedTypology');
+var selectedImage = sessionStorage.getItem('selectedImage');
+
+// Display the selected image in the first column
+var firstColumnImage = document.createElement('img');
+firstColumnImage.src = 'path/to/images/' + selectedImage;
+firstColumnImage.alt = selectedTypology;
+
+var firstColumn = document.querySelector('.moreoptions-column');
+firstColumn.insertBefore(firstColumnImage, firstColumn.firstChild);
+Update your "moreoptions" page HTML code to include the first column with the id "moreoptions-column":
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Options</title>
+</head>
+<body>
+    <h1>More Options</h1>
+    <div class="moreoptions-column">
+        <!-- Content for the first column -->
+        <h2 class="moreoptions-column1-heading">First Column</h2>
+        <p class="moreoptions-column1-subheading">This is the content of the first column.</p>
+    </div>
+    <!-- Other content of the "moreoptions" page -->
+    <script src="path/to/your/script.js"></script>
+</body>
+</html>
+Make sure to replace 'path/to/images/' in the JavaScript code with the actual path to your images.
+
+By implementing these changes, when an h5 element is clicked, the selected typology and image filename will be stored in session storage. The JavaScript code on the "moreoptions" page will retrieve the selected typology and image filename from session storage and display the corresponding image in the first column.
+
+Remember to include the JavaScript code in a separate JavaScript file (e.g., script.js) and link it to your HTML file using the <script> tag.
