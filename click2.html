@@ -37,131 +37,133 @@
     </div>
 
     <!-- Image Gallery -->
-    <div class="image-gallery">
-        <div class="image-item">
-            <img src="house/townhouse.jpg" alt="bungallow">
-            <div class="image-overlay">
-                <h3>Townhouse</h3>
-                <p>Storied house usualy with a guest bedroom on GF</p>
+    <form action="moreoptions.html" onsubmit="submitForm()">   
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="house/townhouse.jpg" alt="townhouse" onclick="selectTypology('Townhouse')">
+                <div class="image-overlay">
+                    <h3>Townhouse</h3>
+                    <p>Storied house usually with a guest bedroom on GF</p>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="house/luxrury.jpg" alt="luxrury" onclick="selectTypology('luxrury')">
+                <div class="image-overlay">
+                    <h3>Luxury Villa</h3>
+                    <p>Similar to a townhouse but with more fancy features</p>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="house/bungallow2.jpg" alt="bungallow2" onclick="selectTypology('bungallow2')">
+                <div class="image-overlay">
+                    <h3>Bungalow</h3>
+                    <p>Single-storied dwelling with all rooms on the ground floor</p>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="house/apartment.jpg" alt="apartment" onclick="selectTypology('apartment')">
+                <div class="image-overlay">
+                    <h3>Apartment</h3>
+                    <p>Multistory dwelling with different units on each floor</p>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="house/simplebulballow.jpg" alt="simplebulballow" onclick="selectTypology('simplebulballow')">
+                <div class="image-overlay">
+                    <h3>Customize</h3>
+                    <p>This allows you to customize in case you don't know what you want :)</p>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="house/fencingetc.jpg" alt="fencingetc" onclick="selectTypology('fencingetc')">
+                <div class="image-overlay">
+                    <h3>Site Works</h3>
+                    <p>This could range from fencing, services like electricity and water, landscaping and roads/paving</p>
+                </div>
             </div>
         </div>
-        <div class="image-item">
-            <img src="house/luxrury.jpg" alt="Image 2">
-            <div class="image-overlay">
-                <h3>Luxrury Villa</h3>
-                <p>Similar to a town house but with more fancy features</p>
+
+        <div class="click2intro">
+            <div class="click2-content">
+                <h2>Tell us more!</h2>
+                <p>Fill each of the following requirements and let us know more about the house of your dreams.</p>
             </div>
         </div>
-        <div class="image-item">
-            <img src="house/bungallow2.jpg" alt="Image 3">
-            <div class="image-overlay">
-                <h3>Bungallow</h3>
-                <p>Single storied dwelling with all rooms on ground floor</p>
+
+        <div class="dropdown-container">
+            <div class="dropdown-column">
+                <!--Location-->
+                <label for="location">Location:</label>
+                <select id="location">
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Narok">Narok</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <!-- Add more locations as needed -->
+                </select>
+
+                <br><br>
+
+                <!--Permanent Adults-->
+                <label for="adults">Adults:</label>
+                <select id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <br><br>
+
+                <!--Num of floors-->
+                <label for="floors">No. of floors:</label>
+                <select id="floors">
+                    <option value="GroundOnly">Ground Only</option>
+                    <option value="toFirst">Ground + 1</option>
+                    <option value="toSecond">Ground + 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="dropdown-column">
+                <!--Available Budget-->
+                <label for="budget">Your budget:</label>
+                <select id="budget">
+                    <option value="million">0 - 1 Million</option>
+                    <option value="twomil">1 Million - 2 Million</option>
+                    <option value="threemil">2 Million - 3 Million</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <br><br>
+
+                <!--Children-->
+                <label for="children">Children:</label>
+                <select id="children">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <br><br>
+
+                <!--Year of project-->
+                <label for="year">Year:</label>
+                <select id="year">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <!-- Add more options as needed -->
+                </select>
             </div>
         </div>
-        <div class="image-item">
-            <img src="house/apartment.jpg" alt="Image 4">
-            <div class="image-overlay">
-                <h3>Apartment</h3>
-                <p>Multistory dwelling with different units on each floor</p>
-            </div>
+
+        <br><br>
+
+        <div class="click2submit">
+            <input type="submit" value="Submit">
         </div>
-        <div class="image-item">
-            <img src="house/simplebulballow.jpg" alt="Image 5">
-            <div class="image-overlay">
-                <h3>Customize</h3>
-                <p>This allows you to customize in case you dont know what you want :)</p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="house/fencingetc.jpg" alt="Image 5">
-            <div class="image-overlay">
-                <h3>Site Works</h3>
-                <p>This could range from fencing, services like electricity and water, landscaping and roads/paving</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="click2intro">
-        <div class="click2-content">
-            <h2>Tell us more!</h2>
-            <p>Fill each of the following requirements and let us know more about the house of your dreams.</p>
-        </div>
-    </div>
-
-    <div class="dropdown-container">
-        <div class="dropdown-column">
-            <!--Location-->
-            <label for="location">Location:</label>
-            <select id="location">
-                <option value="Nairobi">Naoribi</option>
-                <option value="Narok">Narok</option>
-                <option value="Nakuru">Nakuru</option>
-                <!-- Add more names as needed -->
-            </select>
-
-            <br><br>
-
-            <!--Permanent Adults-->
-            <label for="adults">Adults:</label>
-            <select id="adults">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <!-- Add more colors as needed -->
-            </select>
-
-            <br><br>
-
-            <!--Num of floors-->
-            <label for="floors">No. of floors:</label>
-            <select id="floors">
-                <option value="GroundOnly">G Only</option>
-                <option value="toFirst">G + 1</option>
-                <option value="toSecond">G + 2</option>
-                <!-- Add more animals as needed -->
-            </select>
-        </div>
-
-        <div class="dropdown-column">
-            <!--Available Budget-->
-            <label for="budget">Your budget:</label>
-            <select id="budget">
-                <option value="million">0 - 1 Mil</option>
-                <option value="twomil">1 Mil - 2 Mil</option>
-                <option value="threemil">2 Mil - 3 Mil</option>
-                <!-- Add more fruits as needed -->
-            </select>
-
-            <br><br>
-
-            <!--Children-->
-            <label for="children">Children:</label>
-            <select id="children">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <!-- Add more vehicles as needed -->
-            </select>
-
-            <br><br>
-
-            <!--Year of project-->
-            <label for="year">Year:</label>
-            <select id="year">
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <!-- Add more years as needed -->
-            </select>
-        </div>
-    </div>
-
-    <br><br>
-
-    <div class="click2submit">
-        <button onclick="window.location.href='moreoptions.html'">Submit</button>
-    </div>
+    </form>
 
     <script src="script.js"></script>
     <!-- Footer -->

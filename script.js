@@ -38,4 +38,18 @@ function submitForm() {
     console.log("budget: " + budget);
     console.log("children: " + children);
     console.log("year: " + year);
+
+    // Redirect to the next page with the selected values as query parameters
+    window.location.href = "moreoptions.html?location=" + encodeURIComponent(location) + "&adults=" + encodeURIComponent(adults) + "&floors=" + encodeURIComponent(floors) + "&budget=" + encodeURIComponent(budget) + "&children=" + encodeURIComponent(children) + "&year=" + encodeURIComponent(year);
+
+    // Prevent the form from submitting through the default action
+    return false;
 }
+
+function selectTypology(typology) {
+    // Store the selected typology in a variable or send it to the server for storage
+    console.log('Selected typology:', typology);
+    // You can also perform additional actions based on the selected typology
+    // Here the additional actions I will need is to assign a unit cost for each typology
+}
+
