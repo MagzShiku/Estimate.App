@@ -72,9 +72,14 @@
     opacity: 1;
 }
 
-.image-overlay h3 {
+.image-overlay h5 {
     font-size: 20px; /* Adjust the font size */
     margin-bottom: 5px; /* Adjust the margin */
+    cursor: pointer;
+}
+
+.image-overlay h5:hover {
+    color: yellow;
 }
 
 .image-overlay p {
