@@ -35,6 +35,7 @@
     flex: 1;
     padding: 20px;
     align-items: center;
+    /*width: 50%;*/
 }
 
 /*vertical seperating line*/
@@ -102,3 +103,18 @@
 }
 
 /*Subheading*/
+
+
+/*images column*/
+.image-column {
+    display: grid;
+    grid-template-columns: repeat(0, 50%);
+    gap: 10px;
+}
+  
+.image-column img {
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
