@@ -40,9 +40,14 @@ For the image, I noticed that the image was never selected, there was an overlay
 ### Process the captured values on the server-side and use them as needed (e.g., store in a database, display on the page, etc.).
 
 
-3. NOW WE HAVE TO LINK THE IMAGE SELECTED ON THE PREVIOUS PAGE TO DOSPLAY IN THE CURRENT MOREOPTIONS PAGE.... iT SHOULD ALWO RETRIEVE OTHER IMAGES ON THE SAMEFROM THE DATA BASE SO AS TO PROVIE PLANS ETC
+3. NOW WE HAVE TO LINK THE IMAGE SELECTED ON THE PREVIOUS PAGE TO DISPLAY IN THE CURRENT MOREOPTIONS PAGE.... iT SHOULD ALWays RETRIEVE OTHER IMAGES ON THE SAMEFROM THE DATA BASE SO AS TO PROVIE PLANS ETC
 
-### now the first step is to have ither functions on different files....
+### now the first step is to have their functions on different files....DONE
+### Linking the selection of typology to the moreoption first colunm:
+  i realised the id i put in the <p> needed to cj=hange from the id of the element. And I updated the function to reflect that. Then I removed the script I had put in the moreoptions file and brought it into the moreoptions.js file.
+  THis way the functions were not calling wach other... There were some repetitions in calling the parameters... So I deleted the repetitions and it worked....
+
+### Next: I need to edit the sizes of the images Presented in the first column....
 
 I willl keep updating as I go :)
 This is the most excited I have been in a while :)
