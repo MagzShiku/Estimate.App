@@ -30,38 +30,11 @@
     <div class="click3intro">
         <div class="click3-content">
             <h2>I'm Excited... Lets Keep Building it Up!</h2>
-            <p>Based on your previous info, your Dream development is <strong><span id="typology"></span></strong>, of <strong><span id="floors"></span></strong> floor(s), located in <strong><span id="county"></span></strong>. It will house <strong><span id="occupants"></span></strong> occupants and will be built in <strong><span id="year"></span></strong>. Your budget is <strong><span id="budget"></span></strong> Ksh.</p>
+            <p>Based on your previous info, your Dream development is <strong><span id="mytypology"></span></strong>, of <strong><span id="floors"></span></strong> floor(s), located in <strong><span id="county"></span></strong>. It will house <strong><span id="occupants"></span></strong> occupants and will be built in <strong><span id="year"></span></strong>. Your budget is <strong><span id="budget"></span></strong> Ksh.</p>
             <hr>
         </div>
     </div>
-    
-    <script>
-        // Get the URL search parameters
-        const urlParams = new URLSearchParams(window.location.search);
-    
-        // Get the selected values from the URL query parameters
-        const typology = urlParams.get('typology');
-        const county = urlParams.get('county');
-        const adults = urlParams.get('adults');
-        const children = urlParams.get('children');
-        const year = urlParams.get('year');
-        const budget = urlParams.get('budget');
-        const floors = urlParams.get('floors');
-    
-        // Update the content with the selected values
-        document.getElementById('typology').textContent = typology || 'N/A';
-        document.getElementById('county').textContent = county || 'N/A';
-    
-        // Calculate and set the total occupants, handling null or undefined values
-        const totalOccupants = (parseInt(adults) || 0) + (parseInt(children) || 0);
-        document.getElementById('occupants').textContent = totalOccupants;
-    
-        document.getElementById('year').textContent = year || 'N/A';
-        document.getElementById('budget').textContent = budget || 'N/A';
-        document.getElementById('floors').textContent = floors || 'N/A';
-    </script>
-    
-    
+ 
     <div class="moreoptions-container">
         <div class="image-column">
             <img id="image1" src="" alt="Image 1">
@@ -157,9 +130,13 @@
             <hr class="hr2">
         </div>
     </div>
-    <script src="typologyimagesmoreoptions.js"></script>
+    
     <footer>
         <p>&copy; 2023 Estimate</p>
     </footer>
+    
+    
+    <script src="typologyimagesmoreoptions.js" defer></script>
+    
 </body>
 </html>

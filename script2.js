@@ -10,7 +10,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     var floors = document.getElementById("floors").value;
 
     // Get the selected typology from the hidden input field
-    var typology = document.getElementById("selectedTypology").value;
+    var mytypology = document.getElementById("selectedTypology").value;
 
     // Perform any desired actions with the selected values
     console.log("year: " + year);
@@ -26,7 +26,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     "&adults=" + encodeURIComponent(adults) +
     "&children=" + encodeURIComponent(children) +
     "&floors=" + encodeURIComponent(floors) +
-    "&typology=" + encodeURIComponent(typology);
+    "&typology=" + encodeURIComponent(mytypology);
 });
 
 function selectTypology(typology) {
