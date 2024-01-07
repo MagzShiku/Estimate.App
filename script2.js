@@ -1,12 +1,7 @@
-function selectTypology(typology) {
-    // Store the selected typology in the hidden input field
-    document.getElementById("selectedTypology").value = typology;
+// Add event listener for form submission
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-    // You can also perform additional actions based on the selected typology
-    console.log('Selected typology:', typology);
-}
-
-function submitForm() {
     var year = document.getElementById("year").value;
     var budget = document.getElementById("budget").value;
     var county = document.getElementById("county").value;
@@ -25,7 +20,6 @@ function submitForm() {
     console.log("floors: " + floors);
 
     // Redirect to the next page with the selected values as query parameters
-    // window.location.href = "moreoptions.html?year=" + year;
     window.location.href = "moreoptions.html?year=" + encodeURIComponent(year) +
     "&budget=" + encodeURIComponent(budget) +
     "&county=" + encodeURIComponent(county) +
@@ -33,7 +27,13 @@ function submitForm() {
     "&children=" + encodeURIComponent(children) +
     "&floors=" + encodeURIComponent(floors) +
     "&typology=" + encodeURIComponent(typology);
+});
 
-    // Prevent the form from submitting through the default action
-    return false;
+function selectTypology(typology) {
+    // Store the selected typology in the hidden input field
+    document.getElementById("selectedTypology").value = typology;
+
+    // You can also perform additional actions based on the selected typology
+    console.log('Selected typology:', typology);
 }
+
