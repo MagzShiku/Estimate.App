@@ -46,93 +46,113 @@
 
         <div class="moreoptions-column">
             <div>
-                <h1 class="moreoptions-column2-heading">Features</h1>
-                <h2 class="moreoptions-column2-subheading">This is how EstiMate helps you decide if or not your construction project is feasible</h2>
+                <h1 class="moreoptions-column2-heading">Main Space</h1>
             </div>
             <!-- Content for the second column -->
             <div class="moreoptions-container">
                 <div class="sub-column">
                     <!-- Content for the first sub-column -->
-                    <h2>First Sub-Column</h2>
-                    <p>This is the content of the first sub-column.</p>
-                    <div class="dropdown-column">
-                        <!--Location-->
-                        <label for="location1">Location:</label>
-                        <select id="location1">
-                            <option value="Nairobi">Nairobi</option>
-                            <option value="Narok">Narok</option>
-                            <option value="Nakuru">Nakuru</option>
-                            <!-- Add more locations as needed -->
-                        </select>
-            
-                        <br><br>
-            
-                        <!--Permanent Adults-->
-                        <label for="adults1">Adults:</label>
-                        <select id="adults1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <!-- Add more options as needed -->
-                        </select>
-            
-                        <br><br>
-            
-                        <!--Num of floors-->
-                        <label for="floors1">No. of floors:</label>
-                        <select id="floors1">
-                            <option value="GroundOnly">Ground Only</option>
-                            <option value="toFirst">Ground + 1</option>
-                            <option value="toSecond">Ground + 2</option>
-                            <!-- Add more options as needed -->
-                        </select>
-                    </div>
+                    <div class="checkbox-section">
+                        <label><input type="checkbox" name="item1"> master Bedroom Ensuite</label>
+                        <label><input type="checkbox" name="item2"> Common Bathroom</label>
+                        <label><input type="checkbox" name="item3"> Powder Room</label>
+                        <label><input type="checkbox" name="item4"> Pantry</label>
+                        <label><input type="checkbox" name="item5"> Walk In Closet</label>
+                        <label><input type="checkbox" name="item6"> SQ with Bathroom</label>
+                        <label><input type="checkbox" name="item6"> Kitchen Yard (External)</label>
+                      </div>
                 </div>
        
                 <div class="sub-column">
                     <!-- Content for the second sub-column -->
-                    <h2>Second Sub-Column</h2>
-                    <p>This is the content of the second sub-column.</p>
                     <div class="dropdown-column">
-                        <!--Location-->
-                        <label for="location2">Location:</label>
-                        <select id="location2">
-                            <option value="Nairobi">Nairobi</option>
-                            <option value="Narok">Narok</option>
-                            <option value="Nakuru">Nakuru</option>
-                            <!-- Add more locations as needed -->
-                        </select>
-            
-                        <br><br>
-            
-                        <!--Permanent Adults-->
-                        <label for="adults2">Adults:</label>
-                        <select id="adults2">
+                        <!--Ensuite Bedrooms-->
+                        <label for="ensuite bedrooms">Ensuite Bedrooms:</label>
+                        <select id="ensuite bedrooms">
+                            <option value="selectn no">Select No.</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <!-- Add more options as needed -->
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <!-- Add more Ensuite Bedrooms as needed -->
                         </select>
             
-                        <br><br>
+                        <p class="custom-line-break"></p>
             
-                        <!--Num of floors-->
-                        <label for="floors2">No. of floors:</label>
-                        <select id="floors2">
-                            <option value="GroundOnly">Ground Only</option>
-                            <option value="toFirst">Ground + 1</option>
-                            <option value="toSecond">Ground + 2</option>
-                            <!-- Add more options as needed -->
+                        <!--Common Bathrooms-->
+                        <label for="common bathrooms">Common Bathrooms:</label>
+                        <select id="common bathrooms">
+                            <option value="selectn no">Select No.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <!-- Add more common bathrooms as needed -->
+                        </select>
+            
+                        <p class="custom-line-break"></p>
+            
+                        <!--Num of Other Bedrooms-->
+                        <label for="other bedrooms">Other Bedrooms:</label>
+                        <select id="other bedrooms">
+                            <option value="selectn no">Select No.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <!-- Add more Bedrooms as needed -->
+                        </select>
+
+                        <p class="custom-line-break"></p>
+
+                        <!--Type of roofing-->
+                        <label for="roof type">Roof Type:</label>
+                        <select id="roof type">
+                            <option value="select type">Select Type</option>
+                            <option value="1">Flat Concrete Roof</option>
+                            <option value="2">Pitched Clay</option>
+                            <option value="3">Pitched IT Mabati</option>
+                            <option value="4">Pitched Iron Sheet</option>
+                            <option value="5">Pitched Granulated Sheets</option>
+                            <!-- Add more roofing as needed -->
+                        </select>
+
+                        <p class="custom-line-break"></p>
+
+                        <!--Type of Ceiling-->
+                        <label for="ceiling type">Ceiling Type:</label>
+                        <select id="ceiling type">
+                            <option value="select type">Select Type</option>
+                            <option value="acoustic ceiling tiles">Acoustic Ceiling Tiles</option>
+                            <option value="TnG timber ceiling">Timber Ceiling T&G</option>
+                            <option value="Cathedral type timber">Cathedral Timber</option>
+                            <option value="none plaster and paint">None: Plaster & Paint</option>
+                            <option value="plain gypsum">Plain Gypsum</option>
+                            <option value="gypsum bulkhead">Gypsum With Bulkhead</option>
+                            <option value="chipboard ceiling">Chipboard Ceiling</option>
+                            <option value="softboard ceiling">softboard Ceiling</option>
+                            <option value="MDF Ceiling">MDF Ceiling</option>
+
+                            <!-- Add more roofing as needed -->
+
+                            <p class="custom-line-break"></p>
                         </select>
                     </div>
                 </div>
+                
             </div>
             <hr class="hr2">
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2023 Estimate</p>
+        <p>&copy; 2024 Estimate</p>
     </footer>
     
     

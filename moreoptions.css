@@ -35,11 +35,9 @@ margin-left: 10%; /* Adjusted to center the column */
 
 .moreoptions-column {
 flex: 1;
-padding: 20px;
+display:inline-block;
+padding: 2px;
 align-items: center;
-width: 50%;
-margin-right: 5%; /* Adjusted to create space between sub-columns */
-margin-left: 5%; /* Adjusted to create space between sub-columns */
 }
 
 /* vertical separating line */
@@ -53,29 +51,20 @@ margin-bottom: 30px;
 /* the two thinner columns of the right column */
 .sub-column {
     flex: 1;
-    padding: 20px;
-    width: 100%; /* Adjusted to increase the width of the sub-columns */
+    padding: 10px;
+ 
 }
 
 /* main heading column2 */
 .moreoptions-column2-heading {
-display: flex;
-justify-content: center;
-font-size: 30px;
-margin-bottom: 5px;
-color: #636262;
-padding-top: 0px;
-}
-
-.moreoptions-column2-subheading {
-font-size: 15px;
-margin-bottom: 20px;
-padding-top: 5px;
-color: #4a4949;
-position: relative;
-max-width: 80%;
-text-align: center;
-margin-left: 10%;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    color: #4a4949;
+    position: relative;
+    max-width: 80%;
+    text-align: center;
+    margin-left: 0%;
 }
 
 .moreoptions-column1-heading {
@@ -100,11 +89,11 @@ margin-left: 10%;
 
 .hr2 {
 width: 75%;
+display:flex;
 margin: 0 auto;
 border: none;
 border-top: 2px solid rgb(80, 79, 79);
-padding-bottom: 20px;
-padding: none;
+padding: 0;
 }
 
 /* Subheading */
@@ -122,3 +111,13 @@ height: auto;
 margin-right: 50px;
 margin-left: 75px;
 }
+
+
+.checkbox-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-line-break {
+    font-size: 0.5px; /* Adjust the line height to create the desired spacing */
+  }
