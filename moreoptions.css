@@ -34,10 +34,11 @@ margin-left: 10%; /* Adjusted to center the column */
 }
 
 .moreoptions-column {
-flex: 1;
-display:inline-block;
-padding: 2px;
-align-items: center;
+    flex-grow: 1;
+    flex: 1;
+    display:inline-block;
+    padding: 2px;
+    align-items: center;
 }
 
 /* vertical separating line */
@@ -52,8 +53,12 @@ margin-bottom: 30px;
 .sub-column {
     flex: 1;
     padding: 10px;
- 
 }
+
+.row {
+    display: flex;
+}
+
 
 /* main heading column2 */
 .moreoptions-column2-heading {
@@ -64,7 +69,7 @@ margin-bottom: 30px;
     position: relative;
     max-width: 80%;
     text-align: center;
-    margin-left: 0%;
+    margin-left: 5%;
 }
 
 .moreoptions-column1-heading {
@@ -119,5 +124,5 @@ margin-left: 75px;
 }
 
 .custom-line-break {
-    font-size: 0.5px; /* Adjust the line height to create the desired spacing */
+    font-size: 1px; /* Adjust the line height to create the desired spacing */
   }
