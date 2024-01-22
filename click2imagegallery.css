@@ -95,4 +95,21 @@ hr {
     border: none;
     border-top: 2px solid rgb(80, 79, 79); /* Adjust the color and style as desired */
     padding-bottom: 20px;
-  }
+}
+
+.click2submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #69c4c7;
+    color: #e6e2e2;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    top: 50px;
+    left:50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}

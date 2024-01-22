@@ -2,7 +2,8 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     overflow: auto;
-    max-height: 300px;
+    /*max-height: 300px;*/
+    height: 100%;
 }
 .content h2,
 .content p {
@@ -105,7 +106,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: auto;
 }
+
 /*.overlay {
     position: relative;
     height: 100vh; *//* Set the height to 100% of the viewport height */
