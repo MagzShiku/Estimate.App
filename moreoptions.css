@@ -130,3 +130,12 @@ margin-left: 75px;
 .custom-line-break {
     font-size: 1px; /* Adjust the line height to create the desired spacing */
 }
+
+.label {
+    display: inline-block;
+    width: 300px;
+}
+
+.summarytitle {
+    margin-left: 55%; 
+}
