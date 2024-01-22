@@ -222,73 +222,106 @@
                 <br>
 
                 <hr>
+ 
+                <div>
+                    <h1 class="moreoptions-column2-heading">Finishes</h1>
+                </div>
 
                 <div class="row">
                     <!--ROW3-->
                     <div class="sub-column">
                         <!-- Content for the first sub-column in the first row -->
-                        <div class="checkbox-section">
-                            <label><input type="checkbox" name="item1"> Master Bedroom Ensuite</label>
-                            <label><input type="checkbox" name="item2"> Common Bathroom</label>
-                            <label><input type="checkbox" name="item3"> Powder Room</label>
-                            <label><input type="checkbox" name="item4"> Pantry</label>
-                            <label><input type="checkbox" name="item5"> Walk In Closet</label>
-                            <label><input type="checkbox" name="item6"> SQ with Bathroom</label>
-                            <label><input type="checkbox" name="item6"> Kitchen Yard (External)</label>
+                        <div class="dropdown-column">
+                            <!--Bedroom Finishes-->
+                            <label for="bedroom">&middot; Bedroom:</label>
+                            <select id="bedroom">
+                                <option value="selectn no">Select Type.</option>
+                                <option value="Glossy Tiles">Glossy Tiles</option>
+                                <option value="Matt Tiles">Matt Tiles</option>
+                                <option value="SPS Flooring">SPS Flooring</option>
+                                <option value="Parquet">Parquet</option>
+                                <option value="Terrazzo">Terrazzo</option>
+                                <option value="Epoxy">Epoxy</option>
+                                <!-- Add more floor finishes as needed -->
+                            </select> 
+
+                            <p class="custom-line-break"></p>
+
+                            <!--Bathroom-->
+                            <label for="bathroom">&middot; Bathroom:</label>
+                            <select id="bathroom">
+                                <option value="selectn type">Select Type.</option>
+                                <option value="tiles">Tiles Only</option>
+                                <option value="tiles & paint">Part Tiles and Paint</option>
+                                <!-- Add more Ensuite Bedrooms as needed -->
+                            </select>
+
+                            <p class="custom-line-break"></p>                           
                         </div>
+                        <br>    
                     </div>
                     <div class="sub-column">
                         <!-- Content for the second sub-column in the first row -->
                         <div class="dropdown-column">
                             <!--Ensuite Bedrooms-->
-                            <label for="ensuite bedrooms">&middot; Ensuite Bedrooms:</label>
-                            <select id="ensuite bedrooms">
-                                <option value="selectn no">Select No.</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
+                            <label for="kitchen">&middot; Kitchen:</label>
+                            <select id="kitchen">
+                                <option value="selectn no">Finishes.</option>
+                                <option value="1">Tiles Floor</option>
+                                <option value="2">Terrazzo</option>
+                                <option value="3">Epoxy</option>
                                 <!-- Add more Ensuite Bedrooms as needed -->
-                            </select> 
+                            </select>
+
+                            <p class="custom-line-break"></p>
+
+                            <!--Ensuite Bedrooms-->
+                            <label for="extenal wall">&middot; External Wall:</label>
+                            <select id="kitchen">
+                                <option value="selectn no">Select Type.</option>
+                                <option value="1">Plaster and Paint</option>
+                                <option value="2">Key</option>
+                                <option value="3">Stone Cladding</option>
+                                <!-- Add more Ensuite Bedrooms as needed -->
+                            </select>
+
                         </div>
+
+                        <br> 
+
                     </div>
                 </div>
 
                 <hr>
+
+                <div>
+                    <h1 class="moreoptions-column2-heading">Fixed Costs</h1>
+                </div>
 
                 <div class="row">
                     <!--ROW4-->
                     <div class="sub-column">
                         <!-- Content for the first sub-column in the first row -->
                         <div class="checkbox-section">
-                            <label><input type="checkbox" name="item1"> Master Bedroom Ensuite</label>
-                            <label><input type="checkbox" name="item2"> Common Bathroom</label>
-                            <label><input type="checkbox" name="item3"> Powder Room</label>
-                            <label><input type="checkbox" name="item4"> Pantry</label>
-                            <label><input type="checkbox" name="item5"> Walk In Closet</label>
-                            <label><input type="checkbox" name="item6"> SQ with Bathroom</label>
-                            <label><input type="checkbox" name="item6"> Kitchen Yard (External)</label>
+                            <label><input type="checkbox" name="nema"> Nema</label>
+                            <label><input type="checkbox" name="kplc"> Electrical Connection</label>
+                            <label><input type="checkbox" name="wsc"> Water and Sewerage</label>
                         </div>
                     </div>
                     <div class="sub-column">
-                        <!-- Content for the second sub-column in the first row -->
-                        <div class="dropdown-column">
-                            <!--Ensuite Bedrooms-->
-                            <label for="ensuite bedrooms">&middot; Ensuite Bedrooms:</label>
-                            <select id="ensuite bedrooms">
-                                <option value="selectn no">Select No.</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <!-- Add more Ensuite Bedrooms as needed -->
-                            </select> 
+                        <!-- Content for the first sub-column in the first row -->
+                        <div class="checkbox-section">
+                            <label><input type="checkbox" name="building permit"> Building Permit</label>
+                            <label><input type="checkbox" name="Approvals"> Approvals</label>
+                            <label><input type="checkbox" name="Contingensies"> Contingensies</label>
                         </div>
                     </div>
+                </div>
+
+                <br><br>
+
+                <div class="click2submit">
+                    <input type="submit" value="Submit">
                 </div>
 
                 <hr>
