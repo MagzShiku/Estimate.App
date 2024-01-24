@@ -32,10 +32,13 @@
     <div class="click3intro">
         <div class="click3-content">
             <h2>I'm Excited... Lets Keep Building it Up!</h2>
-            <p>Based on your previous info, your Dream development is <strong><span id="mytypology"></span></strong>, of <strong><span id="floors"></span></strong> floor(s), located in <strong><span id="county"></span></strong>. It will house <strong><span id="occupants"></span></strong> occupants and will be built in <strong><span id="year"></span></strong>. Your budget is <strong><span id="budget"></span></strong> Ksh.</p>
+            <div class="click3-content">
+                <p>"At Estimate app, we turn dreams into homes. Acknowledging budget variations, we invite you to enrich your estimate. Share preferences for a personalized vision. Let us simplify your decision-making and bring your dream project to life!"</p>
+            </div>
             <hr>
         </div>
     </div>
+    
     
     <form id="estimateForm"> 
         <div class="moreoptions-container">
@@ -331,20 +334,22 @@
     </form>
 
     <div id="summary" class="summarytitle">
-        <h2>Project Summary</h2>
+        <h2>Project Summary...</h2>
 
         <div class="summaryintro">
             <p>Based on your previous info, your Dream development is <strong><span id="mytypology"></span></strong>, of <strong><span id="floors"></span></strong> floor(s), located in <strong><span id="county"></span></strong>. It will house <strong><span id="occupants"></span></strong> occupants and will be built in <strong><span id="year"></span></strong>. Your budget is <strong><span id="budget"></span></strong> Ksh.</p>
         </div>
+
         <br>
+
         <p><span class="label">Total Estimated Cost:</span> <span id="totalEstimatedCost">Ksh. X</span></p>
-        <p><span class="label">Projected Cost:</span> <span id="projectedCost">Ksh. Y</span></p>
+        <p><span class="label">Budgeted Cost:</span> <span id="budgetedCost">Ksh. Y</span></p>
         <p><span class="label">Difference:</span> <span id="difference">Ksh. Z</span></p>
         <br>
         <p><span class="label">Remarks:</span> <span id="remarks">Project is Viable. Make changes?</span></p>
     </div>
 
-    <br>
+    <br><br>
 
     <footer>
         <p>&copy; 2024 Estimate</p>
@@ -353,6 +358,7 @@
     <script src="typologyimagesmoreoptions.js" defer></script>
     <script src="calculator.js" defer></script>
     <script src="script2.js" defer></script>
+    <script src="summaryIntro.js"></script>
     <script src="summary.js"></script>
     
 </body>
