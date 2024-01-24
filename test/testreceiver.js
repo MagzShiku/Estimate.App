@@ -25,3 +25,24 @@ function updateImages(year) {
         image1.src = "default1.jpg";
     }
 }
+
+// testreceiver.js
+
+// Function to be called when the Submit button is clicked
+function onSubmit() {
+    // Assuming you have a way to get the selected year value
+    var selectedYearValue = document.getElementById('selectedYear').textContent;
+    
+    // Update the output with the chosen year value
+    document.getElementById('chosenYear').textContent = selectedYearValue;
+}
+
+// Attach the onSubmit function to the click event of the Submit button
+document.addEventListener('DOMContentLoaded', function () {
+    var submitButton = document.querySelector('.test2 button[type="submit"]');
+    if (submitButton) {
+        submitButton.addEventListener('click', onSubmit);
+    }
+});
+
+

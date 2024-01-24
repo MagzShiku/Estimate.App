@@ -7,3 +7,4 @@ function submitForm() {
     // Prevent the form from submitting through the default action
     return false;
 }
+
