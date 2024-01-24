@@ -37,22 +37,5 @@ function selectTypology(typology) {
     console.log('Selected typology:', typology);
 }
 
-// testreceiver.js
 
-// Function to be called when the Submit button is clicked
-function onSubmit() {
-    // Assuming you have a way to get the selected year value
-    var selectedYearValue = document.getElementById('mytypology').textContent;
-    
-    // Update the output with the chosen year value
-    document.getElementById('housetype').textContent = selectedYearValue;
-}
-
-// Attach the onSubmit function to the click event of the Submit button
-document.addEventListener('DOMContentLoaded', function () {
-    var submitButton = document.querySelector('.click3submit button[type="submit"]');
-    if (submitButton) {
-        submitButton.addEventListener('click', onSubmit);
-    }
-});
 

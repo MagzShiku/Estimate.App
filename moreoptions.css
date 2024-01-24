@@ -137,5 +137,9 @@ margin-left: 75px;
 }
 
 .summarytitle {
-    margin-left: 55%; 
+    margin-left: 40%; 
+}
+
+.summaryintro {
+    width: 500px; 
 }
