@@ -1,9 +1,23 @@
-//GETS VALUE OF CLICK2//
-// Get the dropdown element
-const dropdown = document.getElementById('myDropdown');
+function updateBudget() {
+    // Get the selected budget value
+    var selectedBudget = document.getElementById('budget').value;
 
-// Get the selected value
-const selectedValue = dropdown.value;
+    // Store the selected budget in localStorage
+    localStorage.setItem('selectedBudget', selectedBudget);
 
-// Compute the values at the end of the presentation
-console.log(selectedValue);
+    // Update the 'Y' value in the summary section
+    document.getElementById('budgetedCost').innerText = 'Ksh. ' + selectedBudget;
+}
+
+// Add this block to set the initial value
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the initially selected budget value
+    var initialBudget = document.getElementById('budget').value;
+
+    // Store the initially selected budget in localStorage
+    localStorage.setItem('selectedBudget', initialBudget);
+
+    // Update the 'Y' value in the summary section
+    document.getElementById('budgetedCost').innerText = 'Ksh. ' + initialBudget;
+});
+           
