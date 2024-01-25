@@ -8,11 +8,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Update the images based on the selected year
     updateImages(selectedYear);
+
+    // Retrieve values from the URL search parameters
+    const baseCost = parseFloat(urlParams.get('baseCost')) || 0;
+    const fenceCost = parseFloat(urlParams.get('fenceCost')) || 0;
+    const totalCost = parseFloat(urlParams.get('totalCost')) || 0;
+
+    // Display the base cost, fence cost, and total cost
+    document.getElementById('baseCost').innerText = "Ksh. " + baseCost.toFixed(2);
+    document.getElementById('fenceCost').innerText = "Ksh. " + fenceCost.toFixed(2);
+    document.getElementById('totalCost').innerText = "Ksh. " + totalCost.toFixed(2);
+
+    // Event listener for the Submit button
+    var submitButton = document.querySelector('.test2 button[type="submit"]');
+    if (submitButton) {
+        submitButton.addEventListener('click', function() {
+            // Assuming you have a way to get the selected year value
+            var selectedYearValue = document.getElementById('selectedYear').textContent;
+
+            // Update the output with the chosen year value
+            document.getElementById('chosenYear').textContent = selectedYearValue;
+        });
+    }
 });
 
 function updateImages(year) {
     var image1 = document.getElementById("image1");
-    
+
     // Update the image sources based on the year
     if (year === "2024") {
         image1.src = "townhouse1.jpeg";
@@ -25,24 +47,3 @@ function updateImages(year) {
         image1.src = "default1.jpg";
     }
 }
-
-// testreceiver.js
-
-// Function to be called when the Submit button is clicked
-function onSubmit() {
-    // Assuming you have a way to get the selected year value
-    var selectedYearValue = document.getElementById('selectedYear').textContent;
-    
-    // Update the output with the chosen year value
-    document.getElementById('chosenYear').textContent = selectedYearValue;
-}
-
-// Attach the onSubmit function to the click event of the Submit button
-document.addEventListener('DOMContentLoaded', function () {
-    var submitButton = document.querySelector('.test2 button[type="submit"]');
-    if (submitButton) {
-        submitButton.addEventListener('click', onSubmit);
-    }
-});
-
-

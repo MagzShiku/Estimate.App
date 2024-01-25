@@ -6,31 +6,40 @@
     <title>Test</title>
 </head>
 <body>
-    <!--Here i have had to call the function (id="myForm" action="testreceiver.html" onsubmit="return submitForm()") -->
-    <form id="myForm" action="testreceiver.html" onsubmit="return submitForm()">
+    <div class="image-item">
+        <div class="image-overlay">
+            <h5 onclick="selectTypology('Townhouse', 55000)">Townhouse</h5>
+            <p>Storied house usually with a guest bedroom on GF</p>
+        </div>
+    </div>
+    <div class="image-item">
+        <div class="image-overlay">
+            <h5 onclick="selectTypology('luxury', 75000)">Luxury Villa</h5>
+            <p>Similar to a townhouse but with more fancy features</p>
+        </div>
+    </div>
+
+    <form id="myForm" action="testreceiver.html" method="get">
         <label for="year">Year:</label>
-        <!--i have added name="year"-->
         <select id="year" name="year">
             <option value="2024">2024</option>
             <option value="2025">2025</option>
             <option value="2026">2026</option>
             <!-- Add more options as needed -->
         </select>
+
+        <!-- Hidden input fields for storing selected values -->
+        <input type="hidden" id="selectedTypology" name="typology" value="">
+        <input type="hidden" id="baseCost" name="baseCost" value="">
+        <input type="hidden" id="fenceCost" name="fenceCost" value="">
+        <input type="hidden" id="totalCost" name="totalCost" value="">
+
         <br><br>
         <div class="click2submit">
-            <!--making it button instead of input-->
-            <button type="submit" value="Submit">Submit</button>
-        </div>
-        <div class="image-overlay">
-            <h5 onclick="selectTypology('Townhouse', 55000)">Townhouse</h5>
-            <p value="13%">Fencing</p>
-            <p>Storied house usually with a guest bedroom on GF</p>
-            <p>The base cost of a townhouse is: Ksh. <span id="baseCost"></span></p>
-            <p>The cost for fencing is: Ksh.  <Span id="fenceCost"></Span></p>
-            <Br><Br>
-            <p>The total cost of construction is: Ksh.  <span id="totalCost"></span></p>
+            <button type="submit">Submit</button>
         </div>
     </form>
+
     <script src="test.js"></script>
 </body>
 </html>
