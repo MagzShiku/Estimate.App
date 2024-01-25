@@ -27,3 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('budgetedCost').innerText = 'Ksh. ' + initialBudget;
 });
            
+
+
+// GETTING CALCULATONS
+// TYPOLOGY COST:
+
