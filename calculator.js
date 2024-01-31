@@ -13,6 +13,9 @@ function updateBudget() {
 
     // Update the 'Y' value in the summary section
     document.getElementById('budgetedCost').innerText = 'Ksh. ' + formattedBudget;
+
+    // Call the function to update the total estimated cost
+    updateTotalEstimatedCost();
 }
 
 // Add this block to set the initial value

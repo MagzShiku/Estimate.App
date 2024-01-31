@@ -37,13 +37,13 @@
     </div>
 
     <!-- Image Gallery -->
-    <form id="myForm" action="moreoptions.html" >   
+    <form id="myForm" action="moreoptions.html" method="get">   
         <div class="image-gallery">
             <div class="image-item">
                 <img src="house/townhouse.jpg" alt="townhouse" >
                 <img src="house/townhouse.jpg" alt="townhouse">
                 <div class="image-overlay">
-                    <h5 onclick="selectTypology('Townhouse')" value="55000" id="townhouseButton">Townhouse</h5>
+                    <h5 onclick="selectTypology('Townhouse', 55000)">Townhouse</h5>
                     <p>Storied house usually with a guest bedroom on GF</p>
                 </div>
             </div>
@@ -57,36 +57,33 @@
             <div class="image-item">
                 <img src="house/bungallow2.jpg" alt="bungallow2" >
                 <div class="image-overlay">
-                    <h5 onclick="selectTypology('Bungallow')" value="45000">Bungalow</h5>
+                    <h5 onclick="selectTypology('Bungallow', 55000)" value="45000">Bungalow</h5>
                     <p>Single-storied dwelling with all rooms on the ground floor</p>
                 </div>
             </div>
             <div class="image-item">
-                <img src="house/apartment.jpg" alt="apartment" onclick="selectTypology('apartment')">
+                <img src="house/apartment.jpg" alt="apartment">
                 <div class="image-overlay">
                     <h5 onclick="selectTypology('Apartment')" value="35000">Apartment</h5>
                     <p>Multistory dwelling with different units on each floor</p>
                 </div>
             </div>
             <div class="image-item">
-                <img src="house/simplebulballow.jpg" alt="simplebulballow" onclick="selectTypology('simplebulballow')">
+                <img src="house/simplebulballow.jpg" alt="simplebulballow">
                 <div class="image-overlay">
-                    <h5 onclick="selectTypology('simplebulballow')">Customize</h5>
+                    <h5 onclick="selectTypology('simplebulballow', 35000)">Customize</h5>
                     <p>This allows you to customize in case you don't know what you want</p>
                 </div>
             </div>
             <div class="image-item">
                 <img src="house/fencingetc.jpg" alt="fencingetc" >
                 <div class="image-overlay">
-                    <h5 onclick="selectTypology('fencingetc')">Site Works</h5>
+                    <h5 onclick="selectTypology('fencingetc', 15000)">Site Works</h5>
                     <p>This could range from fencing, services like electricity and water, landscaping and roads/paving</p>
                 </div>
             </div>
         </div>
         
-        <!-- Hidden input field for typology -->
-        <input type="hidden" id="selectedTypology" name="typology" value="">
-
         <div class="click2intro">
             <div class="click2-content">
                 <h2>Tell us more!</h2>
@@ -166,6 +163,13 @@
             </div>
         </div>
 
+        <!-- Hidden input fields for storing selected values -->
+        <input type="hidden" id="selectedTypology" name="typology" value="">
+        <input type="hidden" id="baseCost" name="baseCost" value="">
+        <input type="hidden" id="fenceCost" name="fenceCost" value="">
+        <input type="hidden" id="totalEstimatedCost" name="totalEstimatedCost" value="">
+        <input type="hidden" id="budget" name="budget" value="">
+
         <br><br>
 
         <div class="click2submit">
@@ -173,7 +177,7 @@
         </div>
     </form>
 
-    
+
     <script src="script2.js"></script>
     
 
