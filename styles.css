@@ -127,7 +127,7 @@ footer {
 }
 
 .overlay-content h2 {
-    font-size: 50px;
+    font-size: 100px;
     margin-bottom: 10px;
 }
 
@@ -206,6 +206,10 @@ footer {
     font-weight: 100;
     font-size: 16px;
     color: #636262;
+}
+
+.mainFeature {
+   font-size: 25px;
 }
 /*
 h3 {
