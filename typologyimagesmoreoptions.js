@@ -40,9 +40,9 @@ function updateImages(typology) {
       image2.src = "typology/bungallow/bungallow2.jpg";
       image3.src = "typology/bungallow/bungallow3.jpg";
     } else if (typology === "Townhouse") {
-      image1.src = "typology/townhouse/townhouse1.jpg";
+      image1.src = "typology/townhouse/townhouse1.jpeg";
       image2.src = "typology/townhouse/townhouse2.jpg";
-      image3.src = "typology/townhouse/townhouse3.jpg";
+      image3.src = "typology/townhouse/townhouse3.png";
     } else if (typology === "Luxury Villa") {
       image1.src = "typology/luxury/luxury1.jpg";
       image2.src = "typology/luxury/luxury2.jpg";
