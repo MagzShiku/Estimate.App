@@ -2,7 +2,7 @@
  ALX Portfolio Project
  The Authors of this project include:
   A. Beatrice Terer    (beatrice.terer@gmail.com)
-  B. Jeniffer Mairura  (njokicaroline104@gmail.com)
+  B. Jeniffer Mairura  (mjenna303@gmail.com)
   C. Magdaline Njuguna (m2015njuguna@gmail.com)
 
 # COHORT_14
